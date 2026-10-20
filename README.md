@@ -210,6 +210,12 @@ Optional: fill the database with 1000 example posts so the home page is not empt
 php artisan db:seed
 ```
 
+Create the public storage link, so that uploaded post images can be shown on the site:
+
+```bash
+php artisan storage:link
+```
+
 ---
 
 ## 7. Start the project
@@ -314,6 +320,7 @@ cp .env.example .env
 php artisan key:generate
 php artisan migrate
 php artisan db:seed
+php artisan storage:link
 composer run dev
 ```
 
